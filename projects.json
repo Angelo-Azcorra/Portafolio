@@ -28,6 +28,15 @@
     "repoUrl": "https://github.com/Angelo-Azcorra/Portafolio/blob/main/RAKURL.html"
   },
   {
+    "id": "couching-agustin-chi",
+    "fileName": "couching.html",
+    "name": "Couching | Agustín Chi",
+    "description": "Landing page responsiva para entrenamiento personal online y presencial, con presentación de servicios, credenciales, evaluación inicial y contacto directo por WhatsApp.",
+    "technologies": ["HTML5", "Tailwind CSS", "JavaScript", "Lucide Icons"],
+    "icon": "fas fa-dumbbell",
+    "url": "https://portafolio.devprojects.space/couching.html"
+  },
+  {
     "id": "otro-proyecto",
     "fileName": "OtroProyecto.html",
     "name": "Plantilla",
