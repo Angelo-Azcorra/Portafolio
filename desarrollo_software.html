@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <meta name="description" content="Portafolio de Angelo Azcorra - Ingeniero en Sistemas Computacionales especializado en desarrollo de productos funcionales y seguros">
-    <meta name="keywords" content="Ingeniero en Sistemas Computacionales, Desarrollo Web, Portafolio, Angelo Azcorra, Angelo-Azcorra">
-    <meta name="author" content="Angelo Azcorra">
-    <title>Angelo Azcorra | Ingeniero en Sistemas Computacionales</title>
+    <!-- Título optimizado para buscadores -->
+    <title>Angelo Azcorra | Ingeniero en Sistemas, Diseño &amp; Tecnología</title>
+
+    <!-- Metadatos de indexación por nombre civil -->
+    <meta name="description" content="Portafolio oficial de Angelo Duriel Azcorra Moguel (Angelo Azcorra). Ingeniero en Sistemas Computacionales y desarrollador de software enfocado en Arquitectura, React, Node e Inteligencia Artificial.">
+    <meta name="keywords" content="Angelo Duriel Azcorra Moguel, Angelo Azcorra, Angelo Azc, AestimAI, Ingeniero en Sistemas Campeche, devprojects, portafolio de sistemas">
+    <meta name="author" content="Angelo Duriel Azcorra Moguel">
+
+    <!-- Open Graph para cuando compartas tu link en WhatsApp o LinkedIn -->
+    <meta property="og:title" content="Angelo Azcorra | Diseño &amp; Tecnología">
+    <meta property="og:description" content="Desarrollo full-stack, plataformas web escalables e integración de Inteligencia Artificial por Angelo Duriel Azcorra Moguel.">
+    <meta property="og:url" content="https://portafolio.devprojects.space/desarrollo_software.html">
+    <meta property="og:type" content="website">
     
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1052,6 +1061,19 @@
         
         .typed-cursor { color: var(--accent-1); }
 
+        /* Corrección de renderizado para los iconos sociales */
+        .contact-link i, i.fa-brands {
+            font-weight: 400 !important;
+            display: inline-block;
+            line-height: 1;
+            text-shadow: none !important;
+        }
+
+        /* Forzar peso en solid icons para evitar bugs visuales */
+        i.fa-solid, .fas {
+            font-weight: 900 !important;
+        }
+
         /* ========================================================
            MEDIA QUERIES: ESCALADO HACIA DESKTOP (MOBILE FIRST)
            ======================================================== */
@@ -1118,6 +1140,33 @@
             footer { font-size: 0.95rem; }
         }
     </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Angelo Duriel Azcorra Moguel",
+      "additionalName": "Angelo Azcorra",
+      "jobTitle": "Ingeniero en Sistemas Computacionales",
+      "url": "https://portafolio.devprojects.space/",
+      "sameAs": [
+        "https://linkedin.com/in/angelo-azc",
+        "https://aestimai.com"
+      ],
+      "knowsAbout": [
+        "React",
+        "Node.js",
+        "Software Architecture",
+        "Artificial Intelligence",
+        "UI/UX Design",
+        "Veterinary Science"
+      ],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Universidad Autónoma de Campeche"
+      }
+    }
+    </script>
 </head>
 <body>
 
