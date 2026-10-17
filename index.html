@@ -428,25 +428,23 @@
            MEDIA QUERIES: ESCALADO HACIA ESCRITORIO (Mobile First)
            ======================================================== */
 
-        /* Tablets pequeñas (>= 640px) */
         @media (min-width: 640px) {
             .choice-card {
                 padding: 40px 30px;
             }
             .choice-icon { font-size: 2.8rem; }
             .choice-card h2 { font-size: 1.6rem; }
-            .choice-btn { width: auto; } /* El botón vuelve a adaptarse a su contenido */
+            .choice-btn { width: auto; } 
         }
 
-        /* Tablets grandes y Desktop (>= 860px) */
         @media (min-width: 860px) {
-            .glow-orb { display: block; } /* Mostrar orbes decorativos */
+            .glow-orb { display: block; } 
             .orb-left { top: 10%; left: -10%; width: 600px; height: 600px; } 
             .orb-right { bottom: -10%; right: -10%; width: 600px; height: 600px; } 
 
             .gateway-wrapper {
                 padding: 60px 24px;
-                justify-content: center; /* Centrar verticalmente en pantallas grandes */
+                justify-content: center; 
             }
 
             .avatar-container {
@@ -461,7 +459,7 @@
             .intro-header { margin-bottom: 60px; }
 
             .choice-grid {
-                grid-template-columns: repeat(2, 1fr); /* 2 Columnas */
+                grid-template-columns: repeat(2, 1fr); 
                 gap: 40px;
             }
 
@@ -482,11 +480,25 @@
             .social-link { width: 45px; height: 45px; font-size: 1.2rem; }
 
             .gateway-footer {
-                position: absolute; /* Fijar al fondo en desktop */
+                position: absolute; 
                 bottom: 20px;
                 margin-top: 0;
                 font-size: 0.85rem;
             }
+        }
+
+        /* ========================================================
+           CORRECCIÓN DE RENDERIZADO DE ÍCONOS (FONT AWESOME 6)
+           ======================================================== */
+        .social-link i {
+            font-weight: 400 !important;
+            display: inline-block;
+            line-height: 1;
+            text-shadow: none !important;
+        }
+
+        .social-link .fa-envelope {
+            font-weight: 900 !important; /* El sobre requiere ser solid/900 */
         }
     </style>
     
@@ -542,7 +554,7 @@
                     </div>
                     <!-- Reverso: Ícono Alien/Hacker para Angelo-Azcorra -->
                     <div class="avatar-back">
-                        <i class="fas fa-user-astronaut"></i>
+                        <i class="fa-solid fa-user-astronaut"></i>
                     </div>
                 </div>
             </div>
@@ -555,7 +567,7 @@
             
             <!-- Ruta Diseño Digital -->
             <a href="diseño_digital.html" class="choice-card card-design">
-                <i class="fas fa-pen-nib choice-icon"></i>
+                <i class="fa-solid fa-pen-nib choice-icon"></i>
                 <h2>Diseño & Marketing</h2>
                 <p>Identidad visual, creación de logotipos de alto impacto y estrategias que venden.</p>
                 <div class="card-tags">
@@ -564,13 +576,13 @@
                     <span class="card-tag">Estrategia</span>
                 </div>
                 <div class="choice-btn">
-                    Explorar Diseño <i class="fas fa-arrow-right"></i>
+                    Explorar Diseño <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </a>
 
             <!-- Ruta Desarrollo Software -->
             <a href="desarrollo_software.html" class="choice-card card-dev">
-                <i class="fas fa-terminal choice-icon"></i>
+                <i class="fa-solid fa-terminal choice-icon"></i>
                 <h2>Ingeniería & Desarrollo</h2>
                 <p>Desarrollo full-stack, plataformas web escalables e integración de Inteligencia Artificial.</p>
                 <div class="card-tags">
@@ -579,7 +591,7 @@
                     <span class="card-tag">Sistemas IA</span>
                 </div>
                 <div class="choice-btn">
-                    Explorar Código <i class="fas fa-arrow-right"></i>
+                    Explorar Código <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </a>
 
@@ -588,13 +600,13 @@
         <!-- Redes Sociales -->
         <div class="social-links">
             <a href="https://github.com/Angelo-Azcorra" target="_blank" class="social-link" title="GitHub">
-                <i class="fab fa-github"></i>
+                <i class="fa-brands fa-github"></i>
             </a>
             <a href="https://linkedin.com/in/angelo-azc" target="_blank" class="social-link" title="LinkedIn">
-                <i class="fab fa-linkedin"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
             </a>
             <a href="mailto:angelo.azcorra@devprojects.space" class="social-link" title="Email">
-                <i class="fas fa-envelope"></i>
+                <i class="fa-solid fa-envelope"></i>
             </a>
         </div>
 
